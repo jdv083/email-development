@@ -71,11 +71,11 @@
         /*==== CSS Media Query 
         - Adapted Bootstrap size breakpoints -
     ====*/
-        @media screen and (max-width: 599.98px) {
+        @media screen and (max-width: 600px) {
          .banner {
             height: auto!important;
-            padding-top: 40px !important;
-            padding-bottom: 60px !important;
+            padding-top: 100px !important;
+            padding-bottom: 80px !important;
          }       
         .two-columns .column {
             max-width: 100% !important;
@@ -87,7 +87,12 @@
         }
         	
     }
-        @media screen and (max-width:399.98px) {}
+        @media screen and (max-width:400px) {
+      .banner{
+         height: auto !important;
+         padding: 30px 0 40px !important;
+      }            
+        }
 
         /*==== To Support Dark Mode Styles ====*/
         :root {
@@ -99,8 +104,8 @@
 
             body,
             table {
-                background-color: #121212 !important;
-                color: #ffffff !important;
+                background-color: #F7FAF7 !important;
+                color: #1F2937 !important;
             }
 
             .darkmode-transparent {
@@ -114,7 +119,7 @@
             }
 
             [data-ogsc] .darkmode-transparent {
-                background-color: #df005d !important;
+                background-color: #1F2937 !important;
                 color: #fff !important;
             }
         }
@@ -128,14 +133,15 @@
     <![endif]-->
 </head>
 
-<body class="body" xml:lang="en" style="margin: 0; padding: 0; background-color: #F7FAF7; min-width: 100%;">
+<body class="body" xml:lang="en" style="margin:0;padding:0;min-width:100%;background-color:#F7FAF7;">
     <div
         style="width: 100%; table-layout: fixed; background-color: #F7FAF7; color:#4B5563; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px;">
         <div
             style="max-width: 600px; background-color: #F7FAF7; font-family: Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0, 0, 0, .25); margin: 0 auto">
 
+            <!-- PREHEADER -->
             <div
-                style="font-size: 0; color:#fff; mso-line-height-rule: exactly; line-height: 0; display: none; max-height: 0; ">
+                style="font-size: 0; color:#fff; mso-line-height-rule: exactly; line-height: 0; display: none; max-height: 0;mso-hide:all;">
                 A quiet moment outdoors, captured in stories and photographs
                 &zwnj; &nbsp; &#847;&zwnj; &nbsp; &#847;&zwnj; &nbsp; &#847;&zwnj; &nbsp; &#847;&zwnj; &nbsp;
                 &#847;&zwnj; &nbsp; &#847;&zwnj; &nbsp; &#847;&zwnj; &nbsp; &#847;&zwnj; &nbsp; &#847;&zwnj; &nbsp;
@@ -172,39 +178,49 @@
             <td style="padding: 0;"> 
             <![endif]-->
 
-
-            <table align="center"
-                style="border-spacing: 0; border-collapse: collapse; color: #4B5563;font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #F7FAF7; margin: 0 auto; padding: 0; width: 100%; max-width: 600px;"
-                role="presentation">
-                <!-- START: LOGO -->
+         <table align="center" style="border-spacing:0; border-collapse: collapse; color:#1F2937; font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 16px; background-color: #F7FAF7; margin: 0 auto; padding:0; width: 100%; max-width: 600px;" role="presentation">
+                <!-- HEADER -->
                 <tr>
                     <td align="center">
                         <table class="darkmode-transparent" role="presentation">
                             <tr>
                                 <td valign="middle" align="center"
-                                    style="padding: 10px 16px 10px; vertical-align:middle; font-size: 32px;line-height: 34px;color: #1F2937;">
-                                    <h1 style="font-size: 32px;line-height:34px; font-weight:bold;color: #1F2937;">
+                                    style="padding: 20px 16px 10px; vertical-align:middle; font-size: 32px;line-height: 34px;color: #1F2937;">
+                                    <h1 style="font-size: 32px;line-height:34px; font-weight:bold;color: #1F2937; margin: 0;">
                                         NATURE NOTES</h1>
-                                    <h2 align="center" style="font-size:20px;color:#1F2937;line-height:28px;">A weekly
-                                        moment outdoors</h2>
+                                    <h2 align="center" style="font-size:18px;color:#1F2937;line-height:38px;font-weight: 400; margin: 0; ">A weekly moment outdoors</h2>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
-                <!-- END: LOGO -->
-                 <!-- START: BANNER -->
+                <!-- HERO -->
                 <tr>
-                    <td class="banner" background="images/nature-hero.gif" width="600" height="298"
-                        style="background-position: center top; background-repeat: no-repeat; background-color: #F7FAF7;"
-                        alt="Nature Hero Image">
+                    <td class="banner" background="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/nature-hero.gif?raw=true" width="600" height="298"
+                        style="background-position: center top; background-repeat: no-repeat;">
+                        
                         <!--[if mso]>
-                        <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border:0;display:inline-block; width: 450pt; height: 223pt;" src="images/nature-hero.gif" alt="Nature Hero" />
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border:0;display:inline-block; width: 450pt; height: 223pt; position: absolute;" >
-                        <v:fill opacity="0%" color="#1F2937" />
-                        <v:textbox inset="0,0,0,0">
-                          <![endif]-->
+                            <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0;display: inline-block; width: 450pt; height: 224pt;" src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/nature-hero.gif?raw=true" />
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0;display: inline-block;position: absolute; width: 450pt; height:224pt;">
+                            <v:fill  opacity="0%" color="#000000"  />
+                            <v:textbox inset="0,0,0,0">
+                        <![endif]-->
                         <table class="darkmode-transparent" cellpadding="0" cellspacing="0" role="presentation">
+                         <tr>
+                                <td align="center" width="600" align="center" valign="middle">
+                                <table class="darkmode-transparent" style="border-spacing: 0; background-color: transparent;" role="presentation">
+                                    <tr>
+                                    <!--[if mso]>
+                                        <td style="padding-top:60px;padding-bottom:15px;">
+                                    <![endif]-->
+                                    <td align="center" style="padding: 10px 10px 35px;"></td>
+                                    <!--[if mso]>
+                                        </td>
+                                    <![endif]-->                                    
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>   
                             <tr>
                                 <td width="600" align="center" valign="middle">
                                     <table class="darkmode-transparent" cellpadding="0" cellspacing="0"
@@ -214,7 +230,7 @@
                                                 <table class="darkmode-transparent" align="center" border="0"
                                                     cellpadding="0" cellspacing="0" role="presentation">
                                                     <tr>
-                                                        <td align="center" style="border-radius:4px;" bgcolor="#2cbc8c">
+                                                        <td align="center"  bgcolor="#2F855A">
                                                             <a href="https://example.com" target="_blank"
                                                                 style="font-size: 16px;font-weight: bold;text-decoration: none;color: #ffffff;background-color: #2F855A;border:1px solid #2F855A;padding:10px 18px;display: inline-block;">Explore more stories</a>
                                                         </td>
@@ -233,24 +249,20 @@
                         <![endif]-->
                     </td>
                 </tr>
-                <!-- END: BANNER -->
-                <!-- START: SUBSCRIBER MESSAGE -->
+                <!-- INTRO -->
                 <tr>
                     <td style="padding: 0;">
                         <table width="100%" style="border-spacing: 0; color: #1F2937;" role="presentation">
                             <tr>
                                 <td style="padding: 20px;color: #1F2937; ">
-                                    <h2 style="text-align: left; font-size: 20px;">Hello {firstName},</h2>
-                                    <p style="margin:0;font-size:14px;color: #4B5563;">Nature has a way of slowing us down. Each week we share a moment outdoors.</p>
+                                    <h2 style="text-align: left; font-size: 20px; margin: 0; padding: 0; line-height: 20px; font-weight: 400;">Hello {firstName},</h2>
+                                    <p style="margin:0;padding: 0; font-size:14px;color: #4B5563;line-height: 20px;">Nature has a way of slowing us down. Each week we share a moment outdoors.</p>
                                 </td>
                             </tr>
                         </table>
-
                     </td>
-
                 </tr>
-                <!-- START: SUBSCRIBER MESSAGE -->
-                <!-- START: FEATURED STORY  --> 
+                <!-- FEATURED STORY -->
                 <tr>
                     <td dir="rtl" style="padding:30px 0; border-top: 2px solid #E5E7EB;">
                         <table width="100%" style="border-spacing:0;" role="presentation">
@@ -260,7 +272,7 @@
                                         <tr>
                                             <td valign="middle" align="center"
                                                 style="padding: 0px; vertical-align:middle; font-size: 32px;line-height: 34px;color: #1F2937;">
-                                                <h2 style="font-size: 20px;line-height:34px; font-weight:bold;color: #1F2937; margin: 0; padding-bottom: 10px;"> PHOTO OF THE WEEK</h2>   
+                                                <h2 style="font-size: 20px;line-height:34px; font-weight:bold;color: #1F2937; margin: 0; padding-bottom: 10px;"> FEATURED STORY</h2>   
                                             </td>
                                         </tr>
                                     </table>
@@ -284,7 +296,7 @@
                                                     role="presentation">
                                                     <tr>
                                                         <td style="padding:0;">
-                                                            <img src="images/nature-img-1.jpg" width="260"
+                                                            <img src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/nature-img-1.jpg?raw=true" width="260"
                                                                 alt="Clear turquoise lake surrounded by mountains with small boats on the water"
                                                                 style="border:0;width:100%;max-width:260px;height:auto;display:block;">
                                                         </td>
@@ -301,7 +313,7 @@
 										</td><td width="300" valign="middle" style="padding:0;">
 									<![endif]-->
 
-                                    <table class="column"
+                                    <table  dir="ltr" class="column"
                                         style="width:100%;max-width:300px;display:inline-block;vertical-align:middle;border-spacing:0;"
                                         role="presentation">
                                         <tr>
@@ -309,14 +321,13 @@
                                                 <table class="content" style="border-spacing:0;text-align:center;"
                                                     role="presentation">
                                                     <tr>
-                                                        <td align="left" valign="middle"
-                                                            style="padding:15px 0 5px;color: #1F2937;">
-                                                            <h3 style="margin:0;font-size:18px;font-weight:bold;">Still
-                                                                waters beneath the mountains</h3>
+                                                        <td  align="left" 
+                                                            style="padding:15px 0 5px;color: #1F2937; ">
+                                                            <h3 style="margin:0;font-size:18px;font-weight:bold; ">Still waters beneath the mountains</h3>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="left" valign="middle"
+                                                        <td align="left" 
                                                             style="padding:5px 0 10px;color: #4B5563;">
                                                             <p style="margin:0;font-size:14px;">Surrounded by towering
                                                                 peaks, the lake rests in near-perfect stillness. Clear
@@ -326,7 +337,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="left" valign="middle"
+                                                        <td align="left"
                                                             style="padding:5px 0 10px;color: #4B5563;">
                                                             <p style="margin:0;font-size:14px;">Scenes like this invite
                                                                 us to slow down — to notice color, texture,and space —
@@ -335,19 +346,12 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td align="left" style="padding-top:5px;">
-                                                            <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                                role="presentation"
-                                                                style="border-spacing:0;text-align:left;">
-                                                                <tr>
-                                                                    <td align="left">
-                                                                        <a href="https://example.com/2" target="_blank"
-                                                                            style="font-size: 16px;font-weight: bold;text-decoration: underline;color: #1F2937;padding:9px 0 ;display: inline-block;">Read the full story</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
+                                                        <td align="left">
+                                                            <a href="https://example.com/2" target="_blank"
+                                                                style="font-size: 16px;font-weight: bold;text-decoration: underline;color: #1F2937;padding:9px 0 ;display: inline-block;"> <span>Read the full story</span></a>
                                                         </td>
                                                     </tr>
+                                                    
                                                 </table>
                                             </td>
                                         </tr>
@@ -360,11 +364,11 @@
 
                                 </td>
                             </tr>
+                            
                         </table>
                     </td>
                 </tr>
-                <!-- END: FEATURED STORY  -->
-                <!-- START: PHOTO OF THE WEEK  -->  
+                <!-- PHOTO OF THE WEEK -->
                 <tr>
                     <td align="center" style="padding: 0px; border-top: 2px solid #E5E7EB;">
                         <table class="darkmode-transparent" role="presentation">
@@ -374,74 +378,68 @@
                                     <h2
                                         style="font-size: 20px;line-height:34px; font-weight:bold;color: #1F2937; margin: 0; padding-bottom: 10px;">
                                         PHOTO OF THE WEEK</h2>
-                                        <h3 style="font-size:18px;color:#4B5563;line-height:28px;margin: 0;">Dawn in the valley</h3>
+                                        <h3 style="font-size:18px;color:#4B5563;line-height:28px;margin: 0;">Dawn in the
+                                            valley
+                                    </h3>
                                     <p style="font-size:16px;color:#4B5563;line-height:28px;margin: 0;">Soft morning
                                         light settles over the valley as the river moves quietly between forest and
                                         stone.</p>
                                 </td>
                             </tr>
-                        </table>
-                    </td>
-                </tr>
-                <table class="column"
-                    style="width:100%;max-width:600px;display:inline-block;vertical-align:middle;border-spacing: 0;"
-                    role="presentation">
-                    <tr>
-                        <td class="padding" style="padding: 20px 20px;">
-                            <table class="content" style="border-spacing:0;text-align:center;" role="presentation">
-                                <tr>
-                                    <td style="padding:0;">
-                                        <img src="images/nature-img-2.jpg" width="260"
-                                            alt="River flowing through a forested valley at sunrise with mountains in the background"
-                                            style="border:0;width:100%;max-width:600px;height:auto;display:block;">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="left" valign="middle"
-                                        style="padding:5px 0 10px;color: #4B5563;">
-                                        <p style="margin:0;font-size:14px;">Early mornings reveal nature at its most balanced, where light, water, and landscape meet in stillness.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>    
-                </table>
-                <!-- START: PHOTO OF THE WEEK  -->
-                <!-- START: CONSERVATION NOTE -->
-                <tr>
-                    <td style="padding:24px 0;">
-                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                            style="background-color:#F0F7F3; border-left:4px solid #2F855A;">
+
                             <tr>
-                                <td style="padding:16px 20px;font-family: Arial, Helvetica, sans-serif;font-size:15px;line-height:22px;color:#1F2937; border-top: 2px solid #E5E7EB;">
-                                    <p style="font-size:16px;color:#1F2937;line-height:28px;margin: 0;font-weight: 600; padding-bottom: 10px;">Conservation note</p>
-                                    <p style="font-size:12px;color:#4B5563;line-height:20px;margin: 0;font-weight: 600;padding-bottom: 10px;">Old-growth forests store more carbon than any other forest type,making their protection essential in slowing climate change and preserving biodiversity.</p>
-                                    <a href="https://example.com/3" target="_blank"
-                                        style="font-size: 16px;font-weight: bold;text-decoration: underline;color: #1F2937;margin: 0;"> Explore more nature stories</a>
+                                <td style="padding:0;">
+                                    <tr>
+                                        <td style="padding: 20px;">
+                                            <img src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/nature-img-2.jpg?raw=true" width="560" alt="River flowing through a forested valley at sunrise with mountains in the background" style="border:0;width:100%;max-width:560px;height:auto;display:block; ">
+                                        </td>
+                                    </tr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle" style="padding:5px 20px 10px;color: #4B5563;">
+                                    <p style="margin:0;font-size:14px;">Early mornings reveal nature at its most balanced, where light, water, and landscape meet in stillness.</p>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
-                <!-- END: CONSERVATION NOTE -->
-                <!-- START: SOCIAL MEDIA -->
+               <!-- CONSERVATION NOTE -->
+               <tr>
+                    <td style="padding:24px 0;">
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                            style="background-color:#F0F7F3; border-left:4px solid #2F855A;">
+                            <tr>
+                                <td style="padding:16px 20px;font-family: Arial, Helvetica, sans-serif;font-size:15px;line-height:22px;color:#1F2937; border-top: 2px solid #E5E7EB;border-bottom: 2px solid #E5E7EB;">
+                                    <p style="font-size:16px;color:#1F2937;line-height:28px;margin: 0;font-weight: 600; padding-bottom: 10px;">Conservation note</p>
+                                    <p style="font-size:12px;color:#4B5563;line-height:24px;margin: 0;font-weight: 600;padding-bottom: 10px;">Old-growth forests store more carbon than any other forest type,making their protection essential in slowing climate change and preserving biodiversity.</p>
+                                    <a href="https://example.com/3" target="_blank"
+                                        style="font-size: 16px;font-weight: bold;text-decoration: underline;color: #1F2937;margin: 0; padding-top: 10px;"> <p style="padding-top: 10; margin: 0;">Explore more nature stories</p></a>
+                                   
+                                </td>
+                            </tr>
+
+                        </table>
+                        
+                    </td>
+                </tr>
+                <!-- SOCIAL ICONS -->
                 <tr>
 					<td style="padding:0;">
-						<table width="100%" style="border-spacing:0;border-top: 2px solid #E5E7EB;border-bottom: 2px solid #E5E7EB;" role="presentation">
+						<table width="100%" style="border-spacing:0;border-bottom: 2px solid #E5E7EB;" role="presentation">
 							<tr>
 								<td class="padding content" style="padding: 12px 0 15px;width:100%;text-align:center; width:600px;">
-									<a href="https://www.example.com"><img src="images/dark-facebook.png" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
-									<a href="https://www.example.com"><img src="images/dark-instagram.png" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
-									<a href="https://www.example.com"><img src="images/dark-twitter.png" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
-									<a href="https://www.example.com"><img src="images/dark-linkedin.png" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
-									<a href="https://www.example.com"><img src="images/dark-youtube.png" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
+									<a href="https://www.example.com"><img src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/dark-facebook.png?raw=true" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
+									<a href="https://www.example.com"><img src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/dark-instagram.png?raw=true" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
+									<a href="https://www.example.com"><img src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/dark-twitter.png?raw=true" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
+									<a href="https://www.example.com"><img src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/dark-linkedin.png?raw=true" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
+									<a href="https://www.example.com"><img src="https://github.com/jdv083/email-development/blob/main/newsletters/nature-notes/images/dark-youtube.png?raw=true" alt="" width="35" style="display:inline-block;border:0;max-width: 35px;"></a>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-                <!-- END: SOCIAL MEDIA -->
-                <!-- START: FOOTER -->
+                <!-- FOOTER -->
                 <tr>
 					<td style="padding:0;">
 						<table width="100%" style="border-spacing:0;" role="presentation">
@@ -480,7 +478,6 @@
                         </table>
 					</td>
 				</tr>
-                <!-- END: FOOTER -->
             </table>
             <!--[if mso]>
             </td>
