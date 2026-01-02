@@ -62,13 +62,13 @@
     </mj-section>
     <mj-section>
       <mj-column>
-        <mj-text align="center">
+        <mj-text align="center"padding="10px 0">
           <p style="font-size:12px; font-weight:normal; font-family:Lato; margin:0; letter-spacing:0px; color:inherit; line-height:14px">Nomad Travel Tips
           </p>
           <p style="font-size:12px; font-weight:normal; font-family:Lato; margin:0; letter-spacing:0px; color:inherit;line-height:14px">123, Corner St., City, Country,99999</p>
           </p>
         </mj-text>
-        <mj-text align="center">
+        <mj-text align="center" padding="10px 0">
           <p style="font-size:12px; font-weight:normal; font-family:Lato; margin:0; letter-spacing:0px; color:inherit; line-height:14px">You're receiving this email because you subscribed to our monthly newsletter.
           </p>
           <p style="font-size:12px; font-weight:normal; font-family:Lato; margin:0; letter-spacing:0px; color:inherit;line-height:14px">If you'd prefer not to receive updates from us, you can <a href="https://www.google.com" style="font-weight:normal;font-family:Lato; margin:0; letter-spacing:0px; text-decoration:underline; color:inherit;">unsubscribe</a>.
