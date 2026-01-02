@@ -21,7 +21,7 @@
       </mj-column>
     </mj-section>
 
-    <mj-hero mode="fluid-height" height="300px" background-width="600px" background-height="300px" background-url="images/hero-tokyo-city.jpg" background-color="#2a3448" padding="40px 0px">
+    <mj-hero mode="fluid-height" height="300px" background-width="600px" background-height="300px" background-url="https://github.com/jdv083/email-development/blob/main/mjml-projects/nomad-travel-tips/images/hero-tokyo-city.jpg?raw=true" background-color="#2a3448" padding="40px 0px">
       <mj-text padding="20px 20px 30px" color="#ffffff" font-family="Lato" align="center" font-size="45px" line-height="45px" font-weight="100" letter-spacing="2px">
         Experience Tokyo's Nightlife
       </mj-text>
@@ -48,7 +48,7 @@
     </mj-section>
     <mj-section background-color="#e6e6e6" border-radius="10px">
       <mj-column width="300px">
-        <mj-image src="images/content-tokyo-city.jpg" alt="An image of Tokyo City" border-radius="10px" padding="15px 30px 0" />
+        <mj-image src="https://github.com/jdv083/email-development/blob/main/mjml-projects/nomad-travel-tips/images/content-tokyo-city.jpg?raw=true" alt="An image of Tokyo City" border-radius="10px" padding="15px 30px 0" />
       </mj-column>
       <mj-column width="300px" padding="15px 30px 0">
         <mj-text align="center">
