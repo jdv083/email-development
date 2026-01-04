@@ -32,38 +32,45 @@ Each template is modular, QA-tested, and designed for long-term maintainability.
 
 ## Project Structure
 
+## Project Structure
+
 transactional-email-system/
-├─ mjml/
-│  ├─ base.mjml
-│  ├─ order-confirmation.mjml
-│  ├─ shipping-confirmation.mjml
-│  └─ password-reset.mjml
-│
-├─ components/
-│  ├─ shared/
-│  │  ├─ head.mjml
-│  │  ├─ footer.mjml
-│  │  └─ button-primary.mjml
-│  │
-│  ├─ order-confirmation/
-│  │  ├─ hero.mjml
-│  │  └─ body.mjml
-│  │
-│  ├─ shipping-confirmation/
-│  │  ├─ hero.mjml
-│  │  └─ body.mjml
-│  │
-│  └─ password-reset/
-│     ├─ hero.mjml
-│     └─ body.mjml
-│
-├─ compiled-html/
-│  └─ eloqua/
-│     ├─ order-confirmation.html
-│     ├─ shipping-confirmation.html
-│     └─ password-reset.html
-│
-└─ README.md
+
+- mjml/
+  - base.mjml
+  - order-confirmation.mjml
+  - shipping-confirmation.mjml
+  - password-reset.mjml
+
+- components/
+  - shared/
+    - head.mjml
+    - footer.mjml
+    - button-primary.mjml
+
+  - order-confirmation/
+    - hero.mjml
+    - body.mjml
+
+  - shipping-confirmation/
+    - hero.mjml
+    - body.mjml
+
+  - password-reset/
+    - hero.mjml
+    - body.mjml
+
+- compiled-html/
+  - eloqua/
+    - order-confirmation.html
+    - shipping-confirmation.html
+    - password-reset.html
+
+- qa/
+  - checklist.md
+
+- README.md
+
 
 
 ---
@@ -144,8 +151,8 @@ emphasizing:
 
 ## Author
 
-John Villa
-Email Developer
+- John Villa
+- Email Developer
 
 - Portfolio: https://jdv083.github.io/johnvilla.github.io
 - GitHub:https://github.com/jdv083
