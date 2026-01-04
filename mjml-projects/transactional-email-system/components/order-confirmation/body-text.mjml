@@ -1,0 +1,17 @@
+<mj-section padding="20px">
+  <mj-column>
+    <!-- BEGIN EDITABLE -->
+    <mj-text>
+      Hi {{Contact.FirstName}},
+    </mj-text>
+
+    <mj-text>
+      We’ve received your order <strong>#{{Order.Number}}</strong>.
+    </mj-text>
+
+    <mj-text>
+      <strong>Total:</strong> {{Order.Total}}
+    </mj-text>
+    <!-- END EDITABLE -->
+  </mj-column>
+</mj-section>

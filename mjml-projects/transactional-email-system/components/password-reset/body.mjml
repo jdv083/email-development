@@ -1,0 +1,21 @@
+<mj-section padding="24px 20px">
+  <mj-column>
+
+    <!-- BEGIN EDITABLE -->
+    <mj-text>
+      Hi {{Contact.FirstName}},
+    </mj-text>
+
+    <mj-text>
+      We received a request to reset your password.
+      Click the button below to choose a new one.
+    </mj-text>
+
+    <mj-text>
+      This link will expire in {{ResetExpiry}}.
+      If you didn’t request this, you can safely ignore this email.
+    </mj-text>
+    <!-- END EDITABLE -->
+
+  </mj-column>
+</mj-section>

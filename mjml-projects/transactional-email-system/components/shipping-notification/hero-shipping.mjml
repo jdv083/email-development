@@ -1,0 +1,35 @@
+<mj-section
+  background-url="https://placehold.co/600x300/4CAF50/FFFFFF"
+  background-size="cover"
+  background-repeat="no-repeat"
+  padding="40px 20px"
+  css-class="dark-bg"
+>
+  <mj-column>
+    <mj-text
+      font-size="24px"
+      color="#ffffff"
+      css-class="dark-text"
+    >
+      Your order has shipped 🚚
+    </mj-text>
+  </mj-column>
+
+  <mj-raw>
+    <!--[if mso]>
+    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"
+      style="width:600px;height:300px;">
+      <v:fill type="frame"
+        src="https://placehold.co/600x300/4CAF50/FFFFFF"
+        color="#000000" />
+      <v:textbox inset="0,0,0,0">
+    <![endif]-->
+  </mj-raw>
+
+  <mj-raw>
+    <!--[if mso]>
+      </v:textbox>
+    </v:rect>
+    <![endif]-->
+  </mj-raw>
+</mj-section>

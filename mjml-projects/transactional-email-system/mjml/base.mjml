@@ -1,0 +1,26 @@
+<!--
+BASE TEMPLATE
+- Controls global layout
+- Do not place content here
+- Padding-only (Eloqua safe)
+-->
+<mjml>
+  <mj-head>
+    <mj-include path="../components/shared/head.mjml" />
+  </mj-head>
+
+  <mj-body background-color="#f4f4f4">
+
+    <!-- Outer wrapper: controls email width -->
+    <mj-wrapper
+      padding="0"
+      background-color="#ffffff"
+    >
+
+      <!-- CONTENT SLOT -->
+      <!-- Each email injects its own components here -->
+
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>

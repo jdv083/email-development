@@ -1,0 +1,14 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../components/head.mjml" />
+  </mj-head>
+
+  <mj-body background-color="#f4f4f4">
+    <mj-wrapper padding="0">
+      <mj-include path="../components/order-confirmation/hero.mjml" />
+      <mj-include path="../components/order-confirmation/body-text.mjml" />
+      <mj-include path="../components/shared/button-primary.mjml"/>
+      <mj-include path="../components/order-confirmation/footer.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

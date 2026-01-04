@@ -1,0 +1,36 @@
+<mj-section padding="20px">
+  <mj-column >
+
+    <!-- Non-Outlook -->
+    <!--[if !mso]> -->
+    <mj-button
+      background-color="#d32f2f"
+      color="#ffffff"
+      padding="16px"
+      border-radius="4px"
+      href="{{ButtonURL}}"
+      align="center"
+    >
+      {{ButtonText}}
+    </mj-button>
+    <!--<![endif]-->
+
+    <!-- Outlook -->
+    <mj-raw>
+      <!--[if mso]>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
+        href="{{ButtonURL}}"
+        style="height:44px;v-text-anchor:middle;width:200px;"
+        arcsize="8%"
+        stroke="f"
+        fillcolor="#d32f2f">
+        <w:anchorlock/>
+        <center style="color:#ffffff;font-family:Arial;font-size:14px;">
+          {{ButtonText}}
+        </center>
+      </v:roundrect>
+      <![endif]-->
+    </mj-raw>
+
+  </mj-column>
+</mj-section>

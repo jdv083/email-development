@@ -1,0 +1,7 @@
+<mj-section padding="20px">
+  <mj-column>
+    <mj-text font-size="12px" color="#777777" align="center">
+      © 2026 Cookie Co. All rights reserved.
+    </mj-text>
+  </mj-column>
+</mj-section>

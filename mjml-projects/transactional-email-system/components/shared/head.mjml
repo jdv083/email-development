@@ -1,0 +1,28 @@
+
+  <mj-attributes>
+    <mj-text
+      font-family="Roboto,Arial, Helvetica, sans-serif"
+      color="#333333"
+      font-size="14px"
+      line-height="20px"
+    />
+  </mj-attributes>
+
+  <mj-style>
+    :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212 !important;
+      }
+      .dark-bg {
+        background-color: #1e1e1e !important;
+      }
+      .dark-text {
+        color: #ffffff !important;
+      }
+    }
+  </mj-style>
+

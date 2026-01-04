@@ -1,0 +1,18 @@
+<mj-section padding="20px">
+  <mj-column>
+    <!-- BEGIN EDITABLE -->
+    <mj-text>
+      Hi {{Contact.FirstName}},
+    </mj-text>
+
+    <mj-text>
+      Good news! Your order <strong>#{{Order.Number}}</strong> is on its way.
+    </mj-text>
+
+    <mj-text>
+      <strong>Carrier:</strong> {{Order.Carrier}}<br />
+      <strong>Tracking Number:</strong> {{Order.TrackingNumber}}
+    </mj-text>
+    <!-- END EDITABLE -->
+  </mj-column>
+</mj-section>
