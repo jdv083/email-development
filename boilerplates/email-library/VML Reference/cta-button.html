@@ -1,0 +1,51 @@
+<!--
+SECTION: CTA BUTTON (VML REQUIRED)
+
+USE WHEN:
+- Primary CTA
+- Rounded corners required
+- Brand color must survive Outlook Windows
+
+RULES:
+- Do not change structure
+- Replace tokens only
+-->
+
+<tr>
+  <td align="center" bgcolor="#{{SECTION_BG}}" style="padding:30px;">
+
+    <!--[if mso]>
+    <v:roundrect
+      href="{{CTA_URL}}"
+      arcsize="10%"
+      fillcolor="#{{ACCENT_COLOR}}"
+      stroke="f"
+      style="height:44px;v-text-anchor:middle;width:220px;">
+      <w:anchorlock/>
+      <center style="
+        color:#ffffff;
+        font-family:Arial,Helvetica,sans-serif;
+        font-size:16px;
+        font-weight:bold;">
+        {{CTA_TEXT}}
+      </center>
+    </v:roundrect>
+    <![endif]-->
+
+    <!--[if !mso]>-->
+    <a href="{{CTA_URL}}"
+       style="
+         background-color:#{{ACCENT_COLOR}};
+         color:#ffffff;
+         font-size:16px;
+         font-weight:bold;
+         text-decoration:none;
+         padding:12px 24px;
+         border-radius:6px;
+         display:inline-block;">
+      {{CTA_TEXT}}
+    </a>
+    <!--<![endif]-->
+
+  </td>
+</tr>

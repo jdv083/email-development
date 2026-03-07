@@ -1,0 +1,59 @@
+<!--
+SECTION_BG: #f3e1dc
+HEADER_BG:  #f3e1dc
+CARD_BG:    #346565
+TEXT_COLOR: #ffffff
+ACCENT:     #546c94
+PADDING:    20px
+-->
+<!-- SECTION: One Third / Two Thirds -->
+<tr>
+  <td bgcolor="#{{SECTION_BG}}">
+
+    <table width="100%" role="presentation">
+
+      <tr>
+        <td bgcolor="#{{HEADER_BG}}" style="padding:12px;">
+          <p style="margin:0;text-align:center;font-size:22px;">
+            {{SECTION_TITLE}}
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="font-size:0;text-align:center;">
+
+          <!--[if mso]>
+          <table width="100%" role="presentation"><tr>
+          <td width="200">
+          <![endif]-->
+
+          <table width="100%" style="max-width:200px;display:inline-block;" role="presentation">
+            <tr>
+              <td bgcolor="#{{CARD_BG}}" style="padding:{{PADDING}};">
+                <img src="{{IMG}}" width="180" alt="" style="display:block;">
+                <p>{{COPY}}</p>
+              </td>
+            </tr>
+          </table>
+
+          <!--[if mso]></td><td width="400"><![endif]-->
+
+          <table width="100%" style="max-width:400px;display:inline-block;" role="presentation">
+            <tr>
+              <td bgcolor="#{{CARD_BG}}" style="padding:{{PADDING}};">
+                {{RICH_COPY}}
+              </td>
+            </tr>
+          </table>
+
+          <!--[if mso]></td></tr></table><![endif]-->
+
+        </td>
+      </tr>
+
+    </table>
+
+  </td>
+</tr>
+<!-- END SECTION -->

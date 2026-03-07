@@ -1,0 +1,196 @@
+<!--
+========================================================================
+PROJECT-LEVEL TOKEN CHECKLIST
+========================================================================
+
+PURPOSE
+- Single source of truth for all campaign-level decisions
+- Must be completed BEFORE editing sections
+- If a value changes per campaign, it belongs here
+- If a value never changes, it belongs in CORE
+
+RULES
+- No {{TOKEN}} placeholders should remain before send
+- No inline colors outside the token list
+- CTA must use blessed VML pattern
+- Sections must start and end at <tr>
+
+========================================================================
+1. GLOBAL PROJECT TOKENS (REQUIRED)
+========================================================================
+
+PREHEADER_TEXT:
+→ (35–100 characters, no CTA language)
+→ Example: “Discover what’s new in our spring collection”
+
+EMAIL_WIDTH:
+→ 600px (LOCKED — do not change)
+
+BODY_BG:
+→ #dde0e1
+
+CONTAINER_BG:
+→ #ffffff
+
+
+========================================================================
+2. BRAND & COLOR TOKENS (REQUIRED)
+========================================================================
+
+PRIMARY_TEXT:
+→ #3d3d3d
+→ Must pass WCAG contrast on white
+
+INVERSE_TEXT:
+→ #ffffff
+
+ACCENT_COLOR:
+→ Used for:
+   - CTA background
+   - CTA border
+   - VML fillcolor
+
+SECTION_BG:
+→ Default section background
+
+ALT_SECTION_BG:
+→ Secondary section background (optional)
+
+CARD_BG:
+→ Card / column background color
+
+
+========================================================================
+3. TYPOGRAPHY TOKENS (LOCKED UNLESS EXCEPTION)
+========================================================================
+
+FONT_STACK:
+→ Arial, Helvetica, sans-serif (LOCKED)
+
+BASE_FONT_SIZE:
+→ 16px
+
+HEADING_SIZE:
+→ 22px (section headers)
+
+LINE_HEIGHT:
+→ 1.4–1.5
+
+
+========================================================================
+4. SPACING TOKENS
+========================================================================
+
+SECTION_PADDING:
+→ 30px (vertical outer spacing)
+
+CARD_PADDING:
+→ 20px
+
+COMPACT_PADDING:
+→ 12–15px
+
+IMAGE_MARGIN_TOP:
+→ 10px
+
+
+========================================================================
+5. IMAGE TOKENS (PER SECTION)
+========================================================================
+
+IMG_SRC:
+→ HTTPS only
+→ No query-string tracking baked in
+
+IMG_ALT:
+→ Human-readable
+→ Decorative images may be ""
+
+IMG_WIDTH:
+→ Must match column max-width exactly
+
+IMG_LINK:
+→ Optional
+→ Never wrap empty <a> tags
+
+
+========================================================================
+6. CTA TOKENS (MANDATORY)
+========================================================================
+
+CTA_TEXT:
+→ Verb-led
+→ 22 characters or fewer
+
+CTA_URL:
+→ HTTPS
+→ No redirect chains if possible
+
+CTA_BG:
+→ Usually ACCENT_COLOR
+
+CTA_TEXT_COLOR:
+→ Usually #ffffff
+
+
+========================================================================
+7. DARK MODE SAFETY TOKENS
+========================================================================
+
+DARK_BG:
+→ #2d2d2d (core default)
+
+DARK_TEXT:
+→ #ffffff
+
+TRANSPARENT_CLASS:
+→ darkmode-transparent
+
+RULE:
+→ Do NOT theme dark mode
+→ Survive inversion only
+
+
+========================================================================
+8. OUTLOOK / VML TOKENS (ONLY IF USED)
+========================================================================
+
+VML_WIDTH:
+→ px → pt conversion
+→ 600px ≈ 450pt
+
+VML_HEIGHT:
+→ Explicit when used (no auto)
+
+VML_FILL:
+→ Must match visible background color
+
+
+========================================================================
+9. SECTION-LEVEL QA CHECK (RUN FOR EACH SECTION)
+========================================================================
+
+☐ Section starts and ends at <tr>
+☐ Section has single outer background
+☐ All colors map to tokens above
+☐ No layout CSS inside section
+☐ No <br> or empty <tr> for spacing
+☐ CTA uses VML-backed pattern
+☐ Images scale on mobile
+☐ Outlook Windows tested
+
+
+========================================================================
+10. FINAL PRE-SEND CHECK
+========================================================================
+
+☐ No {{TOKEN}} placeholders remain
+☐ No inline colors outside token list
+☐ Preheader visible in Gmail + iOS
+☐ CTA clickable in Outlook + Gmail app
+☐ Dark mode does not break CTA
+☐ Visual QA complete
+
+========================================================================
+END PROJECT TOKEN CHECKLIST
+========================================================================

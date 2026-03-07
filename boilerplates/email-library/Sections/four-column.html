@@ -1,0 +1,43 @@
+<!--
+SECTION_BG: #f3e1dc
+HEADER_BG:  #f3e1dc
+CARD_BG:    #346565
+TEXT_COLOR: #ffffff
+ACCENT:     #546c94
+PADDING:    20px
+-->
+<!-- SECTION: Four Column -->
+<tr>
+  <td bgcolor="#{{SECTION_BG}}">
+
+    <table width="100%" role="presentation">
+
+      <tr>
+        <td bgcolor="#{{HEADER_BG}}" style="padding:12px;">
+          <p style="margin:0;text-align:center;font-size:22px;">
+            {{SECTION_TITLE}}
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="font-size:0;text-align:center;">
+
+          <!-- REPEAT 4x -->
+          <table width="100%" style="max-width:150px;display:inline-block;" role="presentation">
+            <tr>
+              <td style="padding:15px;">
+                <img src="{{IMG}}" width="120" alt="" style="display:block;margin:0 auto;">
+                <p style="margin:10px 0 0;">{{COPY}}</p>
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+
+    </table>
+
+  </td>
+</tr>
+<!-- END SECTION -->

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>HTML Email Template Boilerplate</title>
+  <!--[if mso]>
+      <noscript>
+         <xml>
+            <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+         </xml>
+      </noscript>
+   <![endif]-->
+  <style type="text/css">
+      table {
+         border-spacing: 0;
+         border-collapse: collapse;
+      }
+      td {
+         padding: 0;
+      }
+      p {
+         font-size: 16px;
+      }
+      img {
+         border: 0;
+      }
+      a {
+         text-decoration: none;
+         color: #3d3d3d;
+         font-size: 16px;
+      }
+      .content {
+         line-height: 20px;
+         font-size: 16px;
+      }
+
+      u + .body .gmail-blend-screen {
+         background: #000;
+         mix-blend-mode: screen;
+      }
+      u + .body .gmail-blend-difference {
+         background: #000;
+         mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+         width: 100%;
+      }
+
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+         line-height: 100%;
+      }
+
+      a[x-apple-data-detectors=true] {
+         color: inherit !important;
+         text-decoration: inherit !important;
+      }
+      /*-- Class for links or buttons with blue link text generated in iPhone Outlook App Dark Mode --*/
+      /* .bluelink {
+         text-decoration: none;
+         color: #3d3d3d !important;
+      } */
+      /*-- SIMPLE TWO COLUMNS  --*/
+      /* .column-wrapper {
+         padding: 0;
+         font-size: 0;
+         background-color: #b7c0ba;
+         text-align: center;
+      }
+      .column {
+         border-spacing: 0;
+         vertical-align: top;
+         width: 100%;
+         display: inline-block;
+         background-color: #546c94;
+         color: #fff;
+      }
+      .column-one-half {
+         max-width: 300px;
+      }
+      .padding {
+         padding: 20px;
+         background-color: #346565;
+      } */
+      /*-- END SIMPLE TWO COLUMNS LESSON --*/
+      /*-- THIRDS SECTION --*/
+      /* .column-one-third {
+         max-width: 200px;
+      }
+      .column-one-third {
+         max-width: 400px;
+      } */
+      /*-- END THIRDS SECTION --*/
+      @media screen and (max-width: 599.98px) {
+
+        /* Basic Two Column Layout*/
+         /* .column-wrapper {
+            padding: 15px 0 !important;
+         }
+         .padding {
+            padding: 5px 20px 0 !important;
+         }
+         .column-wrapper.fluid-hybrid .column,
+         .column-wrapper.fluid-hybrid .column img {
+            max-width: 100% !important;
+            width: 100% !important;
+         }
+         .column-wrapper.fluid-hybrid {
+            padding: 15px 30px !important;
+         } */
+      }
+      
+      @media screen and (max-width: 399.98px) {
+         
+      }
+
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+         body, table {
+            background: #2d2d2d !important;
+            color: #ffffff !important;
+         }
+         .darkmode-transparent {
+            background-color: transparent !important;
+         }
+         [data-ogsc] body, table {
+            background: #2d2d2d !important;
+            color: #ffffff !important;
+         }
+         [data-ogsc] .darkmode-transparent {
+            background-color: transparent !important;
+         }
+         /* Button Support for Outlook Windows*/
+         /* .lesson-title {
+            color: #3d3d3d!important;
+         }
+         [data-ogsc] .lesson-title {
+            color: #3d3d3d!important;
+         }
+          a.button {
+         box-shadow: 0 8px 8px #000000 !important;
+         }
+         [data-ogsc] a.button {
+            box-shadow: 0 8px 8px #000000 !important;
+         }
+         a.button:hover {
+            box-shadow: 0 4px 4px #000000 !important;
+         }
+         [data-ogsc] a.button:hover {
+            box-shadow: 0 4px 4px #000000 !important;
+         } */
+      }
+  </style>
+
+  <!--[if mso]>
+      <style type="text/css">
+         body {background-color: #dde0e1 !important}
+         body, table, td, p, a {font-family: Arial, Helvetica, sans-serif !important;}
+         table {border-spacing: 0 !important; border-collapse: collapse !important;}
+      </style>
+   <![endif]-->
+
+</head>
+<body class="body" xml:lang="en" style="margin: 0;padding: 0;min-width: 100%; background-color: #dde0e1;">
+
+   <div style="width: 100%; table-layout: fixed; background-color: #dde0e1; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px;">
+      <div style="max-width: 600px; background-color: #fafdfe; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0,0,0, .2);margin: 0 auto;">
+
+         <div style="font-size: 0;color: #fafdfe; mso-line-height-rule: exactly; line-height: 0px; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+            This is our preheader text which can be 35-190 characters but 85-100 is recommended.
+            &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+         </div>
+
+         <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;" role="presentation">
+            <tr>
+            <td style="padding: 0;">
+         <![endif]-->
+
+         <table align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #fafdfe; margin: 0 auto; padding: 0; width: 100%; max-width: 600px;" role="presentation">
+            <!-- FULL WIDTH BANNER IMG -->
+            <tr>
+               <td style="padding: 10px 0 5px; ">
+                  <a href="https://example.com" target="_blank"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/2163b5df-3f70-d1e1-c3be-d62183650a55.png" alt="PNG Banner" width="600" style="max-width: 100%;display: block;"></a>
+               </td>
+            </tr>
+            <!-- END SIMPLE FULL WIDTH BANNER IMG -->
+            <!--  TWO COLUMNS  -->
+            <tr>
+               <td style="padding: 10px 0 10px;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+                      <tr>
+                        <td style="background-color: #f3e1dc;padding: 12px;">
+                           <p style="text-align: center; font-size: 22px; margin: 0;">Two Columns </p>
+                        </td>
+                     </tr>                     
+                     <tr>
+                        <td class="column-wrapper fluid-hybrid" style="padding: 0; font-size: 0; background-color: #b7c0ba; text-align: center;">
+
+                           <!--[if mso]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="300" valign="middle" style="padding: 0;">
+                           <![endif]-->
+
+                           <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 300px; display: inline-block; background-color: #546c94; color: #fff;" role="presentation">
+                              <tr>
+                                 <td class="padding" style="padding: 20px;">
+
+                                    <table class="content" style="border-spacing: 0; text-align: center; color: #fff;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0; background-color: #346565;">
+                                             <a href="https://example.com"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="260" alt="Image Description"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0; background-color: #346565;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                             
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                              </td><td width="300" valign="middle" style="padding: 0;">
+                           <![endif]-->
+
+                           <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 300px; display: inline-block; background-color: #546c94; color: #fff;" role="presentation">
+                              <tr>
+                                 <td class="padding" style="padding: 20px;">
+
+                                    <table class="content" style="border-spacing: 0; text-align: center; color: #fff;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0; background-color: #346565;">
+                                             <a href="https://example.com"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="260" alt="Image Description"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0; background-color: #346565;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+
+                        </td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
+            <!-- END TWO COLUMNS  -->
+            <!-- THREE COLUMNS -->
+            <tr>
+               <td style="padding: 10px 0 10px;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+
+                     <tr>
+                        <td style="background-color: #f3e1dc;padding: 12px;">
+                           <p class="column-title" style="text-align: center; font-size: 22px; margin: 0;">Three Columns Example</p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td class="column-wrapper" style="padding:0;font-size: 0;">
+
+                           <!--[if mso]>
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="200" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                           <table width="100%" style="border-spacing:0; vertical-align: top; width:100%; max-width:200px; display:inline-block; color: #3d3d3d;" role="presentation" class="column column-one-third">
+                              <tr>
+                                 <td class="padding" style="padding: 20px;">
+
+                                    <table class="content" style="border-spacing:0;text-align: center;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0;">
+                                             <a href="https://example.com/"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="160" alt="Image Description" style="max-width: 160px;" align="center"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                           </td><td width="200" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                           <table width="100%" style="border-spacing:0; vertical-align: top; width:100%; max-width:200px; display:inline-block; color: #3d3d3d;" role="presentation" class="column column-one-third">
+                              <tr>
+                                 <td class="padding" style="padding: 20px;">
+
+                                    <table class="content" style="border-spacing:0;text-align: center;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0;">
+                                             <a href="https://example.com/"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="160" alt="Image Description" style="max-width: 160px;" align="center"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                           </td><td width="200" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                           <table width="100%" style="border-spacing:0; vertical-align: top; width:100%; max-width:200px; display:inline-block; color: #3d3d3d;" role="presentation" class="column column-one-third">
+                              <tr>
+                                 <td class="padding" style="padding: 20px;">
+
+                                    <table class="content" style="border-spacing:0;text-align: center;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0;">
+                                             <a href="https://example.com/"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="160" alt="Image Description" style="max-width: 160px;" align="center"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+
+                        </td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
+            <!-- END THREE COLUMNS -->
+            <!-- FOUR COLUMNS -->
+            <tr>
+               <td style="padding: 10px 0 10px;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+
+                     <tr>
+                        <td style="background-color: #f3e1dc;padding: 12px;">
+                           <p class="column-title" style="text-align: center; font-size: 22px; margin: 0;">Four Columns Example</p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td class="column-wrapper" style="padding:0;font-size: 0;">
+
+                           <!--[if mso]>
+                              <table width="100%" style="border-spacing:0;" role="presentation">
+                              <tr>
+                              <td width="150" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                           <table width="100%" style="border-spacing:0; vertical-align: top; width:100%; max-width:150px; display:inline-block; color: #3d3d3d;" role="presentation" class="column column-one-fourth">
+                              <tr>
+                                 <td class="padding" style="padding: 15px;">
+
+                                    <table class="content" style="border-spacing:0;text-align: center;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0;">
+                                             <a href="https://example.com/"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="120" alt="Image Description" style="max-width: 120px;" align="center"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                           </td><td width="150" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                           <table width="100%" style="border-spacing:0; vertical-align: top; width:100%; max-width:150px; display:inline-block; color: #3d3d3d;" role="presentation" class="column column-one-fourth">
+                              <tr>
+                                 <td class="padding" style="padding: 15px;">
+
+                                    <table class="content" style="border-spacing:0;text-align: center;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0;">
+                                             <a href="https://example.com/"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="120" alt="Image Description" style="max-width: 120px;" align="center"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                           </td><td width="150" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                           <table width="100%" style="border-spacing:0; vertical-align: top; width:100%; max-width:150px; display:inline-block; color: #3d3d3d;" role="presentation" class="column column-one-fourth">
+                              <tr>
+                                 <td class="padding" style="padding: 15px;">
+
+                                    <table class="content" style="border-spacing:0;text-align: center;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0;">
+                                             <a href="https://example.com/"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="120" alt="Image Description" style="max-width: 120px;" align="center"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                           </td><td width="150" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                           <table width="100%" style="border-spacing:0; vertical-align: top; width:100%; max-width:150px; display:inline-block; color: #3d3d3d;" role="presentation" class="column column-one-fourth">
+                              <tr>
+                                 <td class="padding" style="padding: 15px;">
+
+                                    <table class="content" style="border-spacing:0;text-align: center;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0;">
+                                             <a href="https://example.com/"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="120" alt="Image Description" style="max-width: 120px;" align="center"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+
+                        </td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
+            <!-- END FOUR COLUMNS -->             
+             <!-- ONE & TWO THIRDS COLUMNS  -->
+            <tr>
+               <td style="padding: 10px 0 10px;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+                      <tr>
+                        <td style="background-color: #f3e1dc;padding: 12px;">
+                           <p style="text-align: center; font-size: 22px; margin: 0;">One & Two-Thirds Columns </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="column-wrapper fluid-hybrid" style="padding: 0; font-size: 0; background-color: #b7c0ba; text-align: center;">
+
+                           <!--[if mso]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="200" valign="middle" style="padding: 0;">
+                           <![endif]-->
+
+                           <table class="column column-two-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 200px; display: inline-block; background-color: #546c94; color: #fff;" role="presentation">
+                              <tr>
+                                 <td class="padding" style="padding: 10px;">
+
+                                    <table class="content" style="border-spacing: 0; text-align: center; color: #fff;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 10px 0 5px 0; background-color: #346565;">
+                                             <a href="https://example.com"><img src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" width="180" alt="Image Description"></a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding: 0px 0 10px 0; background-color: #346565;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                              </td><td width="400" valign="middle" style="padding: 0;">
+                           <![endif]-->
+
+                           <table class="column column-one-third" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 400px; display: inline-block; background-color: #546c94; color: #fff;" role="presentation">
+                              <tr>
+                                 <td class="padding" style="padding: 20px;">
+
+                                    <table class="content" style="border-spacing: 0; text-align: center; color: #fff;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 5px 0 10px 0; background-color: #346565;">
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                             <p style="font-size: 16px;">Replace this text</p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    
+                                 </td>
+                              </tr>
+                           </table>
+
+                           <!--[if mso]>
+                              </td>
+                              </tr>
+                              </table>
+                           <![endif]-->
+
+                        </td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
+            <!-- END ONE & TWO THIRDS COLUMN EXAMPLE -->
+            <!-- VML BUTTON WITH OUTLOOK BORDER RADIUS -->
+            <tr>
+               <td style="padding: 10px 0;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+
+                     <tr>
+                        <td style="background-color: #f3e1dc;padding: 12px;">
+                           <p class="lesson-title" style="text-align: center; font-size: 22px; margin: 0;">VML Button with Outlook Windows Border Radius</p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td align="center" style="padding: 20px;">
+                           <table align="center" role="presentation" style="border-spacing: 0;">
+                           
+                              <tr>
+                                 <td align="center">
+
+                                    <!--[if mso]>
+                                       <v:roundrect
+                                          xmlns_v="urn:schemas-microsoft-com:vml"
+                                          xmlns_w="urn:schemas-microsoft-com:office:word" href="https://example.com" style="height: 34.5pt; width: 124pt; v-text-anchor: middle;" arcsize="14%" strokecolor="#346564" fillcolor="#346564">
+                                          <w:anchorlock/>
+                                          <center style="color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 1px;">MY BUTTON</center>
+                                       </v:roundrect>
+                                    <![endif]-->
+
+                                    <a href="https://example.com" class="button" target="_blank" style="font-size: 18px; font-weight: bold; text-decoration: none; color: #ffffff; background-color: #346564; padding: 12px 24px; border: 1px solid #346564; border-radius: 12px;display: inline-block; letter-spacing:1px; mso-hide: all;">
+                                       MY BUTTON
+                                    </a>
+
+                                 </td>
+                              </tr>
+                           
+                           </table>
+                        </td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
+            <!-- END VML BUTTON WITH OUTLOOK BORDER RADIUS -->
+             <!-- VML BUTTON FOR DARK MODE  -->
+              <div><!--[if mso]>
+                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" rel="noopener" target="_blank" rel="noopener" target="_blank" href="http://" style="height:50px;v-text-anchor:middle; mso-wrap-style: none; mso-position-horizontal: center; mso-position-vertical: top;" arcsize="10%" stroke="f" fillcolor="#1F7F4C">
+                <w:anchorlock/>
+                <center>
+                <![endif]-->
+ <a rel="noopener" target="_blank" rel="noopener" target="_blank" href="http://litmus.com" style="background: rgba(31, 127, 76, 1);border-radius:5px;color:#ffffff;display:inline-block;font-size: 18px; font-family: Helvetica, Arial, sans-serif;font-weight:bold;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;padding: 14px 24px;">I am a button I am a button &rarr;</a>
+                <!--[if mso]>
+                </center>
+                </v:roundrect>
+                <![endif]-->
+                
+              <!-- END VML BUTTON FOR DARK MODE -->
+            <!-- VML IMAGE HANDLING -->
+            <tr>
+               <td style="background-color: #f3e1dc; padding: 10px; border-top: 10px solid #546C94; border-bottom: 10px solid #546C94;">
+
+                  <!--[if mso]>
+                     <v:image src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/a63a4362-8abd-b993-d894-ab788fdc56b8.jpg" style="width: 450pt; height: 332pt;">
+                     </v:image>
+                  <![endif]-->
+
+               </td>
+            </tr>
+            <!--END VML IMAGE HANDLING -->
+            <!-- VML SHAPE HANDLING -->
+            <tr>
+               <td style="background-color: #f3e1dc; padding: 10px; border-top: 10px solid #546C94; border-bottom: 10px solid #546C94;">
+
+                  <!--[if mso]>
+                     <v:rect
+                     fillcolor="#546C94" stroke="true" strokeweight="6pt" strokecolor="#00ff00" style="width:75pt; height:75pt;">
+                     </v:rect>
+                  <![endif]-->
+
+               </td>
+            </tr>
+            <!-- END VML SHAPE HANDLING -->
+             <!-- TEXT LINK HANDLING -->
+            <tr>
+               <td>
+                  <a class="bluelink" href="https://example.com" style="color: #3d3d3d; text-decoration: none;color: inherit;">Phone Numbers & Address Numbers: <br> 1-8&#8203;00-555-5555 <br> 55&#8203;5 Street Road, City, State 55555</a>
+                  <!-- To hide Windows Outlook blue links use color: inherit; and &#8203; in the number or address to hide underlines in Windows 11.
+                  
+                  To hide iPhone Outlook App Dark Mode blue links, the bluelink class is added and given the same color styling in internal stylesheet. -->
+               </td>
+            </tr>  
+            <!-- END TEXT LINK HANDLING -->
+             <!-- SPACING IN HTML EMAIL -->
+            <tr>
+               <td style="padding: 10px 0;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+
+                     <tr>
+                        <td style="background-color: #f3e1dc;padding: 12px;">
+                           <p class="lesson-title" style="text-align: center; font-size: 22px; margin: 0;">Spacing in HTML Email</p>
+                        </td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
+            <!-- END SPACING IN HTML EMAIL -->
+         </table>
+         <!-- HIDE AND UNHIDE CONTENT -->
+          <tr>
+            Here is an example with Outlook:
+
+            <!--[if !mso]>-->
+            <p>THIS IS HIDDEN IN OUTLOOK BUT SHOWS EVERYWHERE ELSE</p>
+            <!--<![endif]-->
+            
+            <!--[if mso]>
+            <p>THIS IS SHOWS ONLY IN OUTLOOK</p>
+            <![endif]-->
+
+            <!-- <style>
+            Media Query Example:
+            /* This style applies when the screen width is 600px or less */
+            @media (max-width: 600px) {
+               p {
+                  display: none; /* This hides the paragraph */
+               }
+            }
+            
+            /* This style applies when the screen width is greater than 600px */
+            @media (min-width: 601px) {
+               p {
+                  display: block; /* This ensures the paragraph is visible */
+               }
+            }
+            </style> -->
+
+         <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+         <![endif]-->
+         </tr>
+         <!-- END HIDE AND UNHIDE CONTENT -->
+          <!-- BACKGROUND IMAGE FALLBACK -->
+            <tr>
+               <td class="banner" background="https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149152831.jpg" width="600" height="332" style="background: url('https://mcusercontent.com/474f5b70c3b324277323d4c42/images/9cc2d79c-092b-91cf-d99a-cd05a99415fd.gif') center / cover no-repeat #1e5d7b; background-position: center; background-size: cover; background-repeat: no-repeat; height: 332px; width: 600px;">
+ 
+                  <!--[if mso]>
+                     <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border:0;display:inline-block; width: 450pt; height: 249pt;" src="https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149152831.jpg" alt="Banner Gif" />
+                     <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border:0;display:inline-block; width: 450pt; height: 249pt; position: absolute;" >
+                     <v:fill opacity="0%" color="#000000" />
+                     <v:textbox inset="0,0,0,0">
+                  <![endif]-->
+ 
+                     <table class="darkmode-transparent" style="border-spacing: 0; background-color: transparent;" role="presentation">
+                        <tr>
+                           <td width="600" align="center" valign="middle">
+ 
+                              <table class="darkmode-transparent" style="border-spacing: 0; background-color: transparent;" role="presentation">
+ 
+                                 <tr>
+                                    <td align="center">
+                                       <table class="darkmode-transparent" style="border-spacing: 0; background-color: transparent;" role="presentation">
+                                          <tr>
+ 
+                                          <!--[if mso]>
+                                             <td style="padding-top: 100px; padding-bottom: 25px;">
+                                          <![endif]-->
+ 
+                                             <td align="center" style="padding: 10px 10px 35px;">
+                                                <h1 style="font-size: 30px; line-height: 30px; color: #ffffff;margin: 0;">Responsive HTML Email Template</h1>
+                                             </td>
+ 
+                                          <!--[if mso]>
+                                             </td>
+                                          <![endif]-->
+ 
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center">
+                                       <table class="darkmode-transparent" style="border-spacing: 0; background-color: transparent;" role="presentation">
+                                          <tr>
+ 
+                                             <td align="center" style="border-radius: 10px;" bgcolor="#eff8fe">
+                                                <a class="bluelink" href="https://example.com/7" target="_blank" style="font-size: 17px; font-weight: bold; text-decoration: none; color: #1e5d7b; background-color: #eff8fe; padding: 12px 20px; border: 1px solid #eff8fe; border-radius: 10px; display: inline-block;">VIEW DEMO</a>
+                                             </td>
+ 
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+ 
+                              </table>
+ 
+                           </td>
+                        </tr>
+                     </table>
+ 
+                  <!--[if mso]>
+                     </v:textbox>
+                     </v:rect>
+                  <![endif]-->
+ 
+               </td>
+            </tr>
+<!-- END BANNER -->
+      </div>
+   </div>
+
+</body>
+</html>
