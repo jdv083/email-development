@@ -55,14 +55,14 @@
     }
 
     /* Gmail blend mode support */
-    u + .body .gmail-blend-screen {
+    /* u + .body .gmail-blend-screen {
       background: #000;
       mix-blend-mode: screen;
     }
     u + .body .gmail-blend-difference {
       background: #000;
       mix-blend-mode: difference;
-    }
+    } */
 
     /* Outlook.com fixes */
     .ExternalClass {
@@ -99,7 +99,7 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      body, table {
+      body, .email-wrapper {
         background-color: #2d2d2d !important;
         color: #ffffff !important;
       }
@@ -112,86 +112,43 @@
       }
       [data-ogsc] .darkmode-transparent {
         background-color: transparent !important;
-      }
+      } 
     }
   </style>
 
   <!--[if mso]>
-  <style type="text/css">
-    body {
-      background-color: #dde0e1 !important;
-    }
-    body, table, td, p, a {
-      font-family: Arial, Helvetica, sans-serif !important;
-    }
-    table {
-      border-spacing: 0 !important;
-      border-collapse: collapse !important;
-    }
-  </style>
-  <![endif]-->
+      <style type="text/css">
+         body {background-color: #dde0e1 !important}
+         body, table, td, p, a {font-family: Arial, Helvetica, sans-serif !important;}
+         table {border-spacing: 0 !important; border-collapse: collapse !important;}
+      </style>
+   <![endif]-->
 </head>
 
-<body class="body" xml:lang="en"
-  style="margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
+
+<body class="body" xml:lang="en" style="margin: 0;padding: 0;min-width: 100%; background-color: #dde0e1;">
 
   <div style="width:100%;table-layout:fixed;background-color:#dde0e1;margin:0 auto 40px;">
-    <div style="max-width:600px;margin:0 auto;background-color:#fafdfe;
-      box-shadow:0 0 10px rgba(0,0,0,.2);">
+    <div style="max-width:600px;margin:0 auto;background-color:#fafdfe; box-shadow:0 0 10px rgba(0,0,0,.2);">
 
       <!-- Preheader (hidden) -->
       <div style="
-        font-size:0;
-        line-height:0;
-        display:none;
-        max-width:0;
-        max-height:0;
-        opacity:0;
-        overflow:hidden;
-        mso-hide:all;">
-        Preheader text goes here. This text is hidden in the email body but visible in inbox previews.
-        &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        font-size:0; line-height:0; display:none; max-width:0; max-height:0; opacity:0;overflow:hidden;mso-hide:all;"> 
+        {{PREHEADER_TEXT}}
+        &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
       </div>
 
       <!--[if mso]>
-      <table width="600" align="center" role="presentation">
-        <tr>
-          <td>
-      <![endif]-->
+            <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;" role="presentation">
+            <tr>
+            <td style="padding: 0;">
+         <![endif]-->
 
-      <table align="center" role="presentation"
-        style="width:100%;max-width:600px;background-color:#fafdfe;
-        font-family:Arial,Helvetica,sans-serif;color:#3d3d3d;">
+         <table align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #fafdfe; margin: 0 auto; padding: 0; width: 100%; max-width: 600px;" role="presentation">
 
-        <!-- Headings -->
-        <tr>
-          <td style="padding:10px;text-align:center;">
-            <h1 style="font-size:30px;margin:0;">Primary Heading</h1>
-            <h2 style="font-size:26px;margin:10px 0 0;">Secondary Heading</h2>
-            <h3 style="font-size:22px;margin:10px 0 0;">Section Heading</h3>
-          </td>
-        </tr>
-
-        <!-- Blend mode example -->
-        <tr>
-          <td style="padding:10px;background-color:#21c6b8;text-align:center;">
-            <h1 style="font-size:30px;margin:0;">
-              Fallback text (no blend mode support)
-            </h1>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="padding:10px;background:#21c6b8;">
-            <div class="gmail-blend-screen">
-              <div class="gmail-blend-difference">
-                <h1 style="font-size:30px;color:#ffffff;text-align:center;margin:0;">
-                  Blend mode enhanced text (supported clients)
-                </h1>
-              </div>
-            </div>
-          </td>
-        </tr>
+        <!-- START SECTIONS -->
+        {{SECTIONS}}
+        <!-- END SECTIONS -->
 
       </table>
 
