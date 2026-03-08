@@ -3,8 +3,9 @@
 .boilerplates/
 .codex/
 .tools/
-.send-test.js
+send-test.js
 .mjml-projects/test2/
 .mjml-projects/index.html
 .mjml-projects/index.mjml
-.mjml-projects/images 
+.mjml-projects/images
+.dev-prompt/
