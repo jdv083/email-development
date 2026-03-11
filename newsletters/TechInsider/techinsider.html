@@ -12,6 +12,27 @@
   <meta name="supported-color-schemes" content="light dark">
   <title>TechInsider — March 2026</title>
 
+  <!--
+  =============================================
+  BRAND COLORS — update here, then find+replace
+  =============================================
+  Purple (primary):  #9333EA
+  Blue (accent):     #2563EB
+  Purple fallback:   #7B2FBE
+  Yellow (highlight):#FACC15
+  Dark bg:           #111827
+  Dark surface:      #1F2937
+  Text dark:         #111827
+  Text muted:        #4B5563
+  Text faint:        #9CA3AF
+  Body bg:           #F3F4F6
+  White:             #ffffff
+  =============================================
+  FONT STACK
+  'Segoe UI', Arial, Helvetica, sans-serif
+  =============================================
+  -->
+
   <!--[if mso]>
   <noscript>
     <xml>
@@ -33,6 +54,10 @@
     img {
       border: 0;
       display: block;
+    }
+    /* Global font — applies everywhere; inline styles override where needed */
+    body, p, a, h1, h2, h3, span, td {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     }
     p {
       font-size: 16px;
@@ -173,13 +198,15 @@
               <tr>
                 <td style="font-size: 0; text-align: left; vertical-align: top;">
 
+                  <!-- COLUMN WIDTHS (330 + 16px gap + 220 = 566px within 600px container)
+                       Update all 3 marked spots together if resizing: MSO td width + table max-width + img width -->
                   <!--[if mso]>
                   <table width="100%" style="border-spacing: 0;" role="presentation"><tr>
-                  <td width="330" valign="top" style="padding: 0;">
+                  <td width="330" valign="top" style="padding: 0;"><!-- [SYNC] left col width -->
                   <![endif]-->
 
                   <!-- Hero Left -->
-                  <table class="hero-left" style="width: 100%; max-width: 330px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation">
+                  <table class="hero-left" style="width: 100%; max-width: 330px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation"><!-- [SYNC] left col max-width -->
                     <tr>
                       <td style="padding: 0 16px 0 0;">
 
@@ -199,6 +226,7 @@
                         <p style="font-family: 'Segoe UI', Arial, Helvetica, sans-serif; font-size: 14px; color: #2563EB; line-height: 22px; margin: 0 0 20px;">Discover how innovative companies are transforming workplace culture with cutting-edge collaboration tools and hybrid strategies.</p>
 
                         <!-- CTA Button -->
+                        <!-- VML: if button text changes, update width below. Current: 150px for "Read More →" -->
                         <!--[if mso]>
                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/featured" arcsize="10%" fillcolor="#9333EA" stroke="f" style="height:40px;v-text-anchor:middle;width:150px;">
                           <w:anchorlock/>
@@ -214,14 +242,14 @@
                   </table>
 
                   <!--[if mso]>
-                  </td><td width="220" valign="top" style="padding: 0;">
+                  </td><td width="220" valign="top" style="padding: 0;"><!-- [SYNC] right col width -->
                   <![endif]-->
 
                   <!-- Hero Right -->
-                  <table class="hero-right" style="width: 100%; max-width: 220px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation">
+                  <table class="hero-right" style="width: 100%; max-width: 220px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation"><!-- [SYNC] right col max-width -->
                     <tr>
                       <td style="padding: 0;">
-                        <img src="images/home-office.png" width="220" alt="Office workspace" style="border: 0; display: block; width: 100%; max-width: 220px; height: auto; border-radius: 8px;">
+                        <img src="https://raw.githubusercontent.com/jdv083/email-development/main/newsletters/TechInsider/images/home-office.png" width="220" alt="Office workspace" style="border: 0; display: block; width: 100%; max-width: 220px; height: auto; border-radius: 8px;"><!-- [SYNC] right col img width -->
                       </td>
                     </tr>
                   </table>
@@ -250,6 +278,8 @@
             </table>
 
             <!-- Article 1 -->
+            <!-- COLUMN WIDTHS (120px image + 16px gap + 416px content = 552px)
+                 Update all 3 [SYNC] spots together if resizing image column -->
             <table width="100%" style="border-spacing: 0;" role="presentation">
               <tr>
                 <td style="font-size: 0; text-align: left; vertical-align: top; padding: 20px 0;">
@@ -259,10 +289,10 @@
                   <td width="120" valign="top" style="padding: 0;">
                   <![endif]-->
 
-                  <table class="article-image" style="width: 100%; max-width: 120px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation">
+                  <table class="article-image" style="width: 100%; max-width: 120px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation"><!-- [SYNC] image col max-width -->
                     <tr>
                       <td style="padding: 0 16px 0 0;">
-                        <img src="images/gadgets.png" width="120" alt="5 Game-Changing Gadgets" style="border: 0; display: block; width: 100%; max-width: 120px; height: auto; border-radius: 6px;">
+                        <img src="https://raw.githubusercontent.com/jdv083/email-development/main/newsletters/TechInsider/images/gadgets.png" width="120" alt="5 Game-Changing Gadgets" style="border: 0; display: block; width: 100%; max-width: 120px; height: auto; border-radius: 6px;"><!-- [SYNC] image col img width -->
                       </td>
                     </tr>
                   </table>
@@ -305,19 +335,21 @@
             </table>
 
             <!-- Article 2 -->
+            <!-- COLUMN WIDTHS (120px image + 16px gap + 416px content = 552px)
+                 Update all 3 [SYNC] spots together if resizing image column -->
             <table width="100%" style="border-spacing: 0;" role="presentation">
               <tr>
                 <td style="font-size: 0; text-align: left; vertical-align: top; padding-bottom: 24px;">
 
                   <!--[if mso]>
                   <table width="100%" style="border-spacing: 0;" role="presentation"><tr>
-                  <td width="120" valign="top" style="padding: 0;">
+                  <td width="120" valign="top" style="padding: 0;"><!-- [SYNC] image col width -->
                   <![endif]-->
 
-                  <table class="article-image" style="width: 100%; max-width: 120px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation">
+                  <table class="article-image" style="width: 100%; max-width: 120px; display: inline-block; vertical-align: top; border-spacing: 0;" role="presentation"><!-- [SYNC] image col max-width -->
                     <tr>
                       <td style="padding: 0 16px 0 0;">
-                        <img src="images/leaders.png" width="120" alt="Leaders navigating change" style="border: 0; display: block; width: 100%; max-width: 120px; height: auto; border-radius: 6px;">
+                        <img src="https://raw.githubusercontent.com/jdv083/email-development/main/newsletters/TechInsider/images/leaders.png" width="120" alt="Leaders navigating change" style="border: 0; display: block; width: 100%; max-width: 120px; height: auto; border-radius: 6px;"><!-- [SYNC] image col img width -->
                       </td>
                     </tr>
                   </table>
@@ -426,6 +458,7 @@
                   <h2 style="font-family: 'Segoe UI', Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; color: #FACC15; margin: 0 0 12px; line-height: 32px;">Join Our Community</h2>
                   <p style="font-family: 'Segoe UI', Arial, Helvetica, sans-serif; font-size: 14px; color: #E9D5FF; line-height: 22px; margin: 0 0 24px;">Get exclusive access to premium content, industry reports, and networking opportunities.</p>
 
+                  <!-- VML: if button text changes, update width below. Current: 200px for "Upgrade to Premium" -->
                   <!--[if mso]>
                   <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://example.com/premium" arcsize="10%" fillcolor="#7B2FBE" stroke="t" strokecolor="#ffffff" style="height:44px;v-text-anchor:middle;width:200px;">
                     <w:anchorlock/>
@@ -433,7 +466,7 @@
                   </v:roundrect>
                   <![endif]-->
                   <!--[if !mso]>-->
-                  <a href="https://example.com/premium" target="_blank" style="background-color: transparent; color: #9333EA; font-family: 'Segoe UI', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; text-decoration: none; padding: 12px 28px; border-radius: 6px; display: inline-block; background-color: #ffffff;">Upgrade to Premium</a>
+                  <a href="https://example.com/premium" target="_blank" style="background-color: #ffffff; color: #9333EA; font-family: 'Segoe UI', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; text-decoration: none; padding: 12px 28px; border-radius: 6px; display: inline-block;">Upgrade to Premium</a>
                   <!--<![endif]-->
                 </td>
               </tr>
